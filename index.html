@@ -12,11 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Include Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
   <body class="bg-[#1d2d44]">
-    <div
-      class="flex justify-between items-center p-5 bg-[#0D1321] fixed w-full top-0"
-    >
+    <div class="flex justify-between items-center p-5 bg-[#0D1321] fixed w-full top-0">
       <figure>
         <img src="/img/logo.webp" alt="Logo" class="w-32" />
       </figure>
@@ -47,28 +47,14 @@
       </div>
     </div>
 
-    <div class=" mt-[88px] p-10">
-            <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-              <img
-                class="w-full h-48 object-cover"
-                src="https://via.placeholder.com/400x200"
-                alt="Card Image"
-              />
-              <div class="p-6">
-                <h2 class="text-xl font-bold text-gray-800">Titolo della Card</h2>
-                <p class="mt-2 text-gray-600">
-                  Questa è una descrizione della card. Usa uno stile accattivante per attirare l'attenzione.
-                </p>
-                <div class="mt-4 flex items-center justify-between">
-                  <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-                    Scopri di più
-                  </button>
-                  <span class="text-sm text-gray-500">5 min fa</span>
-                </div>
-              </div>
-            </div>          
+    <div class="mt-[88px] p-10">
+      <!-- Swiper Container (Grid Layout for Responsiveness) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="games-container">
+        <!-- Cards will be populated here dynamically -->
+      </div>
     </div>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
